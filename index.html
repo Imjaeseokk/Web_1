@@ -7,6 +7,45 @@
     <script>
       console.log("z");
 
+
+      var emptyObj = {};
+      document.write(typeof emptyObj);
+      document.write('<br>');
+
+      function Player(name,position){
+        this.name = name;
+        this.position = position;
+        this.sayHello = function(){
+          document.write("Hello Everyone, I'm"+ this.name);
+        }
+      };
+
+      var messi = new Player('Messi','FW');
+      var ronaldo = new Player('Ronaldo','FW');
+
+      document.write('<br>');
+      messi.sayHello();
+      document.write('<br>');
+      document.write('Player2: ', typeof ronaldo);
+
+
+      // pass by value
+      var a = 1;
+      var b = a;
+      document.write('<br>');
+      document.write(a,b);
+
+      a = 10;
+      document.write('<br>');
+      document.write(a,b);
+      
+    for (var prop in messi){
+      document.write('<br>' + prop + ':' + messi[prop]);
+    }
+
+    // 20230804 5.11 immutable
+
+      document.write('<br>');
     </script>
     <a href ="https://poiemaweb.com/coding"> https://poiemaweb.com/coding </a>  
   </body>
