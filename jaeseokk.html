@@ -1,48 +1,31 @@
 <html>
   <head>
     <h1>Nice 2 Meet U</h1>
+    <link rel="stylesheet" href="main.css">
   </head>
   <body>
-    Hi, I'm Jaeseokk.
-    
-    <br>Age: Born in 1999
-    <br>Career: Samsung Electronics Co.
-    <br>Academy: Ajou University
-    <br><button class="myButton">Click me!</button>
+
+    <h2 id="hello">Hello</h2>
+    <h2 id="hi">merona when u come</h2>
+
+    <div class="alert-box" id="alert-box">알림 상자</div>
+    <button onclick="document.getElementById('alert-box').style.display='block';">open</button>
+    <button onclick="document.getElementById('alert-box').style.display='none';">close</button>
     <script>
-      console.log("z");
-      document.querySelector('.myButton').addEventListener('click', function () {
-        alert('Clicked!');
-      });
-
-      function break_line (number){
-        for(var i = 0;i<number;i++){
-          document.write("<br>");
-        }
-      }
-
-      var x = "jaeseokk";
-      document.write("<br>",x,"<br>");
-
-      var now = 3;
-      var hello;
-      if (now > 3){
-        hello = "Good morning";
-      } else if (now == 3){
-        hello = "Good afternoon";
-      } else {
-        hello = "Good evening";
-      }
-      document.write("<br>",hello);
-      break_line(2);
-      document.write("Test")
-
+      
+      document.getElementById('hello').innerHTML = 'Hi';
+      // web document .Id를 통해서 HTML Element Get . 내부 글자
+      document.getElementById('hello').style.color = 'Blue';
+      document.getElementById('hello').style.fontSize = '30px';
+    
+      // document.getElementById('???').???.??? = 'Blue'
+      document.getElementById('hi').innerHTML = "babamba when u come";
 
     </script>
     <p>
       <br>
       <h3>Reference</h3>
-      <a href ="https://poiemaweb.com/coding"> https://poiemaweb.com/coding </a>  
+      <a href ="https://youtu.be/8rv8GTgYYrU"> https://youtu.be/8rv8GTgYYrU </a>  
       
 
     </p>
