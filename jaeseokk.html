@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <h1>Nice 2 Meet U</h1>
+  </head>
+  <body>
+    Hi, I'm Jaeseokk.
+    
+    <br>Age: Born in 1999
+    <br>Career: Samsung Electronics Co.
+    <br>Academy: Ajou University
+    <br><button class="myButton">Click me!</button>
+    <script>
+      console.log("z");
+      document.querySelector('.myButton').addEventListener('click', function () {
+        alert('Clicked!');
+      });
+
+      function break_line (number){
+        for(var i = 0;i<number;i++){
+          document.write("<br>");
+        }
+      }
+
+      var x = "jaeseokk";
+      document.write("<br>",x,"<br>");
+
+      var now = 3;
+      var hello;
+      if (now > 3){
+        hello = "Good morning";
+      } else if (now == 3){
+        hello = "Good afternoon";
+      } else {
+        hello = "Good evening";
+      }
+      document.write("<br>",hello);
+      break_line(2);
+      document.write("Test")
+
+
+    </script>
+    <p>
+      <br>
+      <h3>Reference</h3>
+      <a href ="https://poiemaweb.com/coding"> https://poiemaweb.com/coding </a>  
+      
+
+    </p>
+    
+  </body>
+</html>
+
