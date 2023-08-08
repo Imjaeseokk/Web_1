@@ -9,8 +9,8 @@
     <h2 id="hi">merona when u come</h2>
 
     <div class="alert-box" id="alert-box">알림 상자</div>
-    <button onclick="document.getElementById('alert-box').style.display='block';">open</button>
-    <button onclick="document.getElementById('alert-box').style.display='none';">close</button>
+    <button onclick="open_alert()">open</button>
+    <button onclick="close_alert()">close</button>
     <script>
       
       document.getElementById('hello').innerHTML = 'Hi';
@@ -20,6 +20,15 @@
     
       // document.getElementById('???').???.??? = 'Blue'
       document.getElementById('hi').innerHTML = "babamba when u come";
+
+      function close_alert(){
+        document.getElementById('alert-box').style.display='none';
+      }
+
+      function open_alert(){
+        document.getElementById('alert-box').style.display='block';
+      }
+
 
     </script>
     <p>
