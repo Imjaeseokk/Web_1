@@ -14,9 +14,25 @@
     <button onclick="Login_Error('ID')">ID Button</button>
     <button onclick="Login_Error('PW')">PW Button</button>
     <!-- <button onclick="open_alert()">open</button>
-    <button onclick="close_alert('none')">close</button>
+    <button onclick="close_alert('none')">close</button> -->
 
+    <button id="close"> button for eventlistener</button>
     <br>
+    <br>
+    <div>
+      <span id="hour" class ="time">00</span>
+      <span>hr</span>
+      <span id ="minute" class ="time">00</span>
+      <span>min</span>
+      <span id="second" class ="time">00</span>
+      <span>sec</span>
+    </div>
+    <button id="'addtest">add test</button>
+
+    <button id = 'start'>Start</button>
+    <button id = 'stop'>Stop</button>
+    <button id = 'reset'>Reset</button>
+    <!-- <br>
     <div class="alert_box" id="box2">You didn't input PW</div>
     <button onclick="control_alert('ID')">View Box</button>
     <button onclick="control_alert('none')">Hide Box</button> -->
@@ -35,6 +51,14 @@
     
       // document.getElementById('???').???.??? = 'Blue'
       document.getElementById('hi').innerHTML = "babamba when u come";
+
+      document.getElementById('close').addEventListener('click',function(){
+        document.getElementById('box').style.display = 'none';
+      });
+      // Event Listener: Element가 Click되면 Code 실행
+      // button click하면 id가 box인 element style 바꿈
+      // event는 여러개 있음
+
 
       // function close_alert(hole){
       //   document.getElementById('box1').style.display=hole;
@@ -58,7 +82,20 @@
       
 
     </p>
-    
+    <br>
+    <h4 id="evening"> Good Evening</h4>
+    <h4 class ='morning'>Good Morning</h4>
+    <h4 class = 'morning'>No Not Funny</h4>
+    <script src =C:\Users\kakao\Desktop\2023Web\Web_1\code.jquery.com_jquery-3.7.0.min.js>    </script>
+    <script>
+      $('#evening').html('No Not Good');
+      // css 형식, innerHTML 같은거임
+      //$('#evening').text('');
+      // .text는 안에 있는 모든 글자, .html은 안에 있는 모든 html
+      $('.morning').addClass('yellow-bg')
+      // css에서 선언한 class를 html tag에 적용
+      // 기존 java script에서도 이렇게 가능: document.querySelector('#evening')
+    </script>
   </body>
 </html>
 
