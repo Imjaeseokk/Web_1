@@ -8,11 +8,26 @@
     <h2 id="hello">Hello</h2>
     <h2 id="hi">merona when u come</h2>
 
-    <div class="alert-box" id="alert-box">알림 상자</div>
-    <button onclick="open_alert()">open</button>
-    <button onclick="close_alert()">close</button>
+    <div class="alert_box" id="box">This is Box</div>
+    <!-- css에서 class로 style 지정하려면 .
+    css에서 id로 style 지정하려면 # -->
+    <button onclick="Login_Error('ID')">ID Button</button>
+    <button onclick="Login_Error('PW')">PW Button</button>
+    <!-- <button onclick="open_alert()">open</button>
+    <button onclick="close_alert('none')">close</button>
+
+    <br>
+    <div class="alert_box" id="box2">You didn't input PW</div>
+    <button onclick="control_alert('ID')">View Box</button>
+    <button onclick="control_alert('none')">Hide Box</button> -->
     <script>
-      
+      function Login_Error(target){
+        document.getElementById('box').innerHTML ="You didn't input "+target;
+        document.getElementById('box').style.display = 'block';
+      }
+      // button tag에서 Func() 실행하면 target parameter로 받은 string을 뒤에 붙이고 출력
+      // Id가 box인 Element의 style.display를 block으로 바꿔서 보이게 함
+
       document.getElementById('hello').innerHTML = 'Hi';
       // web document .Id를 통해서 HTML Element Get . 내부 글자
       document.getElementById('hello').style.color = 'Blue';
@@ -21,13 +36,18 @@
       // document.getElementById('???').???.??? = 'Blue'
       document.getElementById('hi').innerHTML = "babamba when u come";
 
-      function close_alert(){
-        document.getElementById('alert-box').style.display='none';
-      }
+      // function close_alert(hole){
+      //   document.getElementById('box1').style.display=hole;
+      // }
 
-      function open_alert(){
-        document.getElementById('alert-box').style.display='block';
-      }
+      // function open_alert(){
+      //   document.getElementById('box1').style.display='block';
+      // }
+
+      // function control_alert(alert_key){
+      //   document.getElementById('box2').style.display=alert_key;
+      // }
+
 
 
     </script>
