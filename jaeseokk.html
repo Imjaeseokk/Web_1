@@ -8,6 +8,10 @@
     <h2 id="hello">Hello</h2>
     <h2 id="hi">merona when u come</h2>
 
+    <button id = "plus_one">press</button>
+    <span id = 'count'>0</span>
+    <br>
+
     <div class="alert_box" id="box">This is Box</div>
     <!-- css에서 class로 style 지정하려면 .
     css에서 id로 style 지정하려면 # -->
@@ -37,10 +41,18 @@
     <button onclick="control_alert('ID')">View Box</button>
     <button onclick="control_alert('none')">Hide Box</button> -->
     <script>
+      // counter button code
+      document.getElementById('plus_one').addEventListener('click',function(){
+        var currentCount = parseInt(document.getElementById('count').innerHTML);
+        var newcount = currentCount + 1;
+        document.getElementById('count').innerHTML = newcount;
+      });
+      // to here
+
       function Login_Error(target){
         document.getElementById('box').innerHTML ="You didn't input "+target;
         document.getElementById('box').style.display = 'block';
-      }
+      };
       // button tag에서 Func() 실행하면 target parameter로 받은 string을 뒤에 붙이고 출력
       // Id가 box인 Element의 style.display를 block으로 바꿔서 보이게 함
 
